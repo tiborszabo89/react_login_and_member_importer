@@ -1,0 +1,286 @@
+/* .react-login-pop {
+  height: 43px;
+  padding-top: 0;
+  margin-top: 32px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 43px;
+  background: rgba(60,60,60,.85);
+  text-transform: uppercase;
+  color: #cfa144;
+  width: 250px;
+  display: block;
+  text-decoration: none;
+} */
+
+.react-login-pop:hover {
+  color: #cfa144;
+}
+
+.super-loader {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 43px;
+  background: rgba(60,60,60,.85);
+  text-transform: uppercase;
+  padding: 0px 50px;
+  display: flex;
+  margin-top: 50px;
+  text-align: center;
+  justify-content: center;
+  color: #cfa144;
+  align-items: center;
+  border: none;
+  transition: ease all .2s;
+  cursor: pointer;
+}
+.closex {
+  height: 34px;
+  width: 34px;
+  background-color: #323232;
+  border-radius: 50%;
+  position: absolute;
+  border: 2px solid #fff;
+  right: -10px;
+  top: -10px;
+  z-index: 10;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgb(0 0 0 / 50%);
+
+}
+.closex:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '\d7';
+  font-size: 28px;
+  color: #FFF;
+  line-height: 30px;
+  text-align: center;
+  pointer-events: none;
+}
+.super-loader:focus, .super-loader:disabled {
+  outline: none;
+  background: red;
+  opacity: 0.5;
+}
+.super-loader:hover {
+  outline: none;
+  opacity: 0.8;
+}
+.modal-custom {
+  top: 0%;
+  left: 0%;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: #5353539a;
+  margin: auto;
+  transition: ease all .2s;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.child {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 60vw;
+}
+@media(max-width:991px) {
+  .child {
+    width: 89%;
+
+  }
+  #react-login-name , #react-login-password {
+    width: 250px !important;
+  }
+  .helper-para {
+    padding: 0 20px;
+  }
+  .login-submit-react {
+    padding: 0 70px !important;
+  }
+  .react-login-form {
+    min-height: 640px;
+  }
+  .support_link {
+    margin-bottom: 30px;
+  }
+  .react-user-data {
+    font-size: 13px !important;
+  }
+  .modal-welcome-message {
+    margin: 15px 0 !important;
+    padding: 0 15px !important;
+  }
+  .modal-sub-status {
+    margin: 0 0 80px 0;
+  }
+}
+.react-login-form {
+  background: #323232;
+  font-family: 'OpenSans';
+  font-size: 14px;
+  line-height: 22px;
+  color: #a6a6a6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgb(0 0 0 / 0%);
+  -webkit-text-size-adjust: 100%;
+  justify-content: center;
+  text-align: center;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 25px rgb(0 0 0 / 50%);
+}
+
+.blocker {
+  margin-bottom: 2px;
+}
+.blocker label {
+  display: none;
+  margin-right: 20px;
+}
+.support_link {
+  font-family: 'OpenSans';
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #a6a6a6;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  position: relative;
+  width: 100px;
+}
+.support_link:before {
+  position: absolute;
+  filter: invert(83%) sepia(12%) saturate(2288%) hue-rotate(344deg) brightness(84%) contrast(92%);
+  content: "";
+  background-image: url(email.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 15px;
+  left: -50px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.support_link:hover {
+  color: #a6a6a6;
+}
+.react-login-form input {
+  height: 45px !important;
+  width: 310px !important;
+}
+.react-login-form h3 {
+  line-height: 1;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: "Reem Kufi";
+  font-weight: 700;
+}
+.react-login-form .helper-para {
+  margin-bottom: 60px;
+  opacity: 0.5;
+}
+.login-submit-react {
+  max-width: 600px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 43px;
+  background: rgba(60,60,60,.85);
+  text-transform: uppercase;
+  padding: 00px 250px;
+  display: flex;
+  margin: 50px auto 50px auto;
+  text-align: center;
+  justify-content: center;
+  color: #cfa144;
+  align-items: center;
+  border: none;
+  transition: ease all .2s;
+}
+.login-submit-react:hover {
+  opacity: 0.8;
+}
+.react-user-data {
+  background-color: #323232;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 10px 25px rgb(0 0 0 / 50%);
+  font-size: 16px;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-weight: 300;
+}
+
+.react-user-data a {
+  color: #fff;
+  font-family: 'Open Sans';
+  display: block;
+  width: 100%;
+  background-color: #363636 ;
+  position: absolute;
+  bottom: 0;
+  transition: ease all .2s;
+  cursor: pointer;
+  line-height: normal;
+  padding: 14px 0;
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: none;
+}
+.react-user-data a:hover {
+  color: #e74c3c;
+  background-color: #292929;
+}
+.react-user-data p {
+  margin: 0;
+}
+.react-user-data .modal-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.react-user-data .modal-display-name {
+ background-color: #666;
+ color: #fff;
+ font-size: 20px;
+ font-weight: 600;
+ text-transform: capitalize;
+ padding: 10px 0;
+}
+
+.modal-welcome-message {
+  padding: 0 45px;
+  margin: 50px 0;
+}
+.modal-customer-number {
+  margin: 30px 0;
+}
+.modal-sub-status {
+  margin: 40px 0 80px 0;
+}
+
+.modal-subscription-location {
+  margin-top: 20px;
+}
+
+#update_users,#new_users {
+  margin-top: 25px;
+  padding-top: 25px;
+  border-top: 1px solid #292929;
+}
+
+.user-update-import h3, .new-member-import h3 {
+margin-bottom: 0;
+}
